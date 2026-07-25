@@ -7,7 +7,7 @@
       row-gap: 3.5rem;
    }
    &__data{
-      text-align: center;
+      text-align: left; /* Schimbat din center în left dacă vrei și textul din antet la stânga */
    }
    &__description{
       margin-bottom: 2rem;
@@ -16,16 +16,17 @@
    &__group{
       display: grid;
    }
-  &__content {
-   grid-template-columns: repeat(2, max-content);
-   column-gap: 4rem;
-   justify-content: start; /* Se mută complet în stânga containerului */
-   padding-left: 1.5rem;   /* Ajustează după bunul plac */
-   align-items: baseline;
-}
+   &__content{
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 4rem;
+      justify-content: start; /* Lipeste ambele coloane de stânga */
+      align-items: baseline;
+   }
    &__group{
       row-gap: 1rem;
       list-style: decimal-leading-zero;
+      padding-left: 1.2rem; /* Reduce padding-ul nativ al listei pentru ca numerele (01, 02) să fie cât mai în stânga */
+      margin-left: 0;       /* Scoate orice margine din stânga */
    }
    &__item{
       font-weight: var(--font-medium);
