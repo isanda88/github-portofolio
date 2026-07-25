@@ -24,10 +24,10 @@
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(230, 46%, 82%);
-  --body-color: hsl(229, 92%, 24%);      /* Poți schimba cu HEX, ex: #0a0f1d sau #ffffff (alb) */
+  --body-color: hsl(229, 100%, 11%);      /* Poți schimba cu HEX, ex: #0a0f1d sau #ffffff (alb) */
 
   /* Fundalul containerelor/cardurilor */
-  --container-color: hsl(230, 91%, 9%);
+  --container-color: hsl(230, 92%, 5%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
