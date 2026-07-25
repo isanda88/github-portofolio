@@ -16,12 +16,13 @@
    &__group{
       display: grid;
    }
-   &__content{
-      grid-template-columns: repeat(2, max-content);
-      column-gap: 4rem;
-      justify-content: center;
-      align-items: baseline;
-   }
+  &__content {
+   grid-template-columns: repeat(2, max-content);
+   column-gap: 4rem;
+   justify-content: start; /* Se mută complet în stânga containerului */
+   padding-left: 1.5rem;   /* Ajustează după bunul plac */
+   align-items: baseline;
+}
    &__group{
       row-gap: 1rem;
       list-style: decimal-leading-zero;
