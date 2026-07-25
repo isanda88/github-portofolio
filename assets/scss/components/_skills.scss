@@ -1,39 +1,54 @@
 /*=============== SKILLS ===============*/
-.skills{
+.skills {
    background-color: var(--container-color);
 
-   &__container{
+   &__container {
       padding-bottom: 2rem;
       row-gap: 3.5rem;
+      align-items: center;
    }
-   &__data{
-      text-align: left; /* Schimbat din center în left dacă vrei și textul din antet la stânga */
+
+   &__data {
+      text-align: left;
    }
-   &__description{
+
+   &__description {
       margin-bottom: 2rem;
    }
-   &__content,
-   &__group{
+
+   &__content {
       display: grid;
+      /* Structură pe 2 coloane egale pentru aptitudini */
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 2.5rem 3rem;
+      align-items: start;
    }
-   &__content{
-      grid-template-columns: repeat(2, max-content);
-      column-gap: 4rem;
-      justify-content: start; /* Lipeste ambele coloane de stânga */
-      align-items: baseline;
-   }
-   &__group{
-      row-gap: 1rem;
+
+   &__group {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.25rem;
       list-style: decimal-leading-zero;
-      padding-left: 1.2rem; /* Reduce padding-ul nativ al listei pentru ca numerele (01, 02) să fie cât mai în stânga */
-      margin-left: 0;       /* Scoate orice margine din stânga */
+      padding-left: 1.8rem; /* Spațiu dedicat numerelor 01, 02 */
+      margin: 0;
    }
-   &__item{
+
+   &__item {
       font-weight: var(--font-medium);
       color: var(--title-color);
 
-      &::marker{
+      &::marker {
          color: var(--first-color);
+         font-weight: var(--font-semi-bold);
+      }
+   }
+}
+
+/* Responsivitate pentru dispozitive mobile */
+@media screen and (max-width: 576px) {
+   .skills {
+      &__content {
+         grid-template-columns: 1fr; /* Trec pe un singur rând pe telefoane */
       }
    }
 }
