@@ -47,11 +47,6 @@ The goal of this portfolio is to present my projects, technical skills, and lear
 
 ---
 
-## 🌍 Live Demo
-
-Add your GitHub Pages link here:
-
-**# 🌐 Personal Portfolio Website
 
 ## 📖 Overview
 
