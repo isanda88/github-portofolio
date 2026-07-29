@@ -409,7 +409,7 @@ svg {
 /*=============== SERVICES ===============*/
 .services__container {
   row-gap: 2rem;
-  padding-block: 8rem;
+  padding-block: 1rem;
 }
 
 .services__card {
