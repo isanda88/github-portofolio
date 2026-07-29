@@ -16,18 +16,17 @@ contactForm.addEventListener("submit", function (e) {
         )
         .then(() => {
             contactMessage.textContent = "Message sent successfully!";
-
             contactMessage.style.color = "green";
-
             contactForm.reset();
 
             setTimeout(() => {
                 contactMessage.textContent = "";
             }, 5000);
         })
-        .catch(() => {
-            contactMessage.textContent = "Message could not be sent.";
+        .catch((error) => {
+            console.error("EmailJS Error:", error);
 
+            contactMessage.textContent = "Message could not be sent.";
             contactMessage.style.color = "red";
         });
 });
