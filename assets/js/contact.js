@@ -24,9 +24,9 @@ contactForm.addEventListener("submit", function (e) {
             }, 5000);
         })
         .catch((error) => {
-            console.error("EmailJS Error:", error);
+    console.error("EmailJS Error:", error.text || error);
 
-            contactMessage.textContent = "Message could not be sent.";
-            contactMessage.style.color = "red";
-        });
+    contactMessage.textContent = "Error: " + (error.text || "Unknown error");
+    contactMessage.style.color = "red";
+});
 });
