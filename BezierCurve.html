@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Bézier Curve Visualization - Portfolio</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="index.html#home" class="nav__link">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="index.html#about" class="nav__link">About</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="index.html#projects" class="nav__link active-link">Projects</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="index.html#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== PROJECT DETAILS ====================-->
+      <section class="about section" id="project-details">
+         <div class="about__container container grid">
+            <div class="about__data">
+               
+               <a href="index.html#projects" class="button" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <i class="ri-arrow-left-line"></i> Back to Projects
+               </a>
+
+               <h2 class="section__title" style="text-align: left;">
+                  Bézier Curve Visualization
+               </h2>
+
+               <p class="about__description">
+                  Developed as my <strong>Bachelor's Thesis</strong>, this application focuses on the mathematical representation and interactive visualization of Bézier curves using Bernstein polynomials (specifically for quadratic $n=2$ and cubic $n=3$ cases). It combines concepts from Computer Graphics, Numerical Analysis, and Computational Geometry.
+               </p>
+
+               <div style="margin-top: 1.5rem;">
+                  <h3 style="margin-bottom: 0.5rem; color: var(--title-color);">Technologies Used:</h3>
+                  <p class="about__description">
+                     <strong>Language:</strong> Java<br>
+                     <strong>GUI Framework:</strong> Java Swing<br>
+                     <strong>Core Concepts:</strong> Bernstein Polynomials, Computational Geometry, Object-Oriented Programming
+                  </p>
+               </div>
+
+               <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                  <a href="https://github.com/isanda88/BezierCurve-Undergraduate-thesis" target="_blank" class="button" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                     <i class="ri-github-line"></i> View Code
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__image">
+               <!-- Înlocuiește cu un demo GIF sau o imagine din lucrarea de licență -->
+               <img src="assets/img/project-img-2.jpg" alt="Bézier Curve Demo" class="home__profile-img" style="border-radius: 1rem; width: 100%;">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FEATURES SECTION ====================-->
+      <section class="services section">
+         <h2 class="section__title">
+            Key Features
+         </h2>
+
+         <div class="services__container container grid">
+            <article class="services__card">
+               <i class="ri-git-commit-line services__icon"></i>
+               <h3 class="services__title">Control Points Mode</h3>
+               <p class="services__description">
+                  Interactively set control points ($n=2, n=3$), compute Bernstein basis polynomials automatically, and render the resulting Bézier curve in real time.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-functions services__icon"></i>
+               <h3 class="services__title">Polynomial Coefficients</h3>
+               <p class="services__description">
+                  Supports reverse construction: input Bernstein polynomial coefficients directly to reconstruct and display the curve automatically.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-shape-2-line services__icon"></i>
+               <h3 class="services__title">Interactive Math GUI</h3>
+               <p class="services__description">
+                  Built with Java Swing to provide dynamic visualization of polynomial interpolation and vector-based geometric curve rendering.
+               </p>
+            </article>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div>
+            <h1 class="footer__title">
+               Ioana <span>Sandu</span>
+            </h1>
+         </div>
+
+         <div class="footer__social">
+            <a href="https://github.com/isanda88" target="_blank" class="footer__social-link">
+               <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ioana-s-191797383/" target="_blank" class="footer__social-link">
+               <i class="ri-linkedin-box-line"></i>
+            </a>
+         </div>
+
+         <span class="footer__copy">
+            &#169; Copyright Bedimcode. All rights reserved
+         </span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
