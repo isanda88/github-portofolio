@@ -10,7 +10,7 @@ contactForm.addEventListener("submit", function (e) {
 
     emailjs
         .sendForm(
-            "service_8ax3f12",
+            "service_w8nwu1f",
             "template_y3aa7aw",
             "#contact-form"
         )
