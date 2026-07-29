@@ -408,8 +408,9 @@ svg {
 
 /*=============== SERVICES ===============*/
 .services__container {
-  row-gap: 2rem;
-  padding-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
 }
 
 .services__card {
