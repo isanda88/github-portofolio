@@ -13,7 +13,7 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>SQL EDA Project - Portfolio</title>
+   <title>MySQL Project - Portfolio</title>
 </head>
 
 <body>
@@ -65,18 +65,19 @@
                </a>
 
                <h2 class="section__title" style="text-align: left;">
-                  World Layoffs Exploratory Data Analysis (EDA)
+                  MySQL Data Analysis Project
                </h2>
 
                <p class="about__description">
-                  An exploratory data analysis project in SQL focused on discovering trends, patterns, and key insights about global tech layoffs across companies, industries, countries, and timeline periods.
+                  A relational database project focused on structuring data, writing complex SQL queries, views, and stored procedures to extract valuable business insights and optimize data retrieval.
                </p>
 
                <div style="margin-top: 1.5rem;">
                   <h3 style="margin-bottom: 0.5rem; color: var(--title-color);">Technologies Used:</h3>
                   <p class="about__description">
-                     <strong>Database:</strong> MySQL<br>
-                     <strong>Key Techniques:</strong> Aggregations (`SUM`, `MAX`), Grouping (`GROUP BY`), Window Functions (`OVER`, `DENSE_RANK`), CTEs
+                     <strong>Database Management:</strong> MySQL<br>
+                     <strong>Query Language:</strong> SQL (DDL, DML, Joins, Aggregations, Subqueries)<br>
+                     <strong>Tools:</strong> MySQL Workbench / phpMyAdmin
                   </p>
                </div>
 
@@ -88,7 +89,7 @@
             </div>
 
             <div class="home__image">
-               <img src="assets/img/MySQL.svg.webp" alt="MySQL Exploratory Data Analysis" class="home__profile-img" style="border-radius: 1rem; width: 100%;">
+               <img src="assets/img/MySQL.svg.webp" alt="MySQL Project Demo" class="home__profile-img" style="border-radius: 1rem; width: 100%;">
             </div>
          </div>
       </section>
@@ -96,31 +97,31 @@
       <!--==================== FEATURES SECTION ====================-->
       <section class="services section">
          <h2 class="section__title">
-            Key Analysis & Insights
+            Key Features & Operations
          </h2>
 
          <div class="services__container container grid">
             <article class="services__card">
-               <i class="ri-pie-chart-line services__icon"></i>
-               <h3 class="services__title">Breakdowns & Totals</h3>
+               <i class="ri-database-2-line services__icon"></i>
+               <h3 class="services__title">Database Design</h3>
                <p class="services__description">
-                  Analyzed total layoffs grouped by company, industry sector, funding stage, and country to pinpoint the most impacted areas.
+                  Created normalized relational schemas, defined primary/foreign keys, and established table constraints.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-code-s-slash-line services__icon"></i>
+               <h3 class="services__title">Advanced Queries</h3>
+               <p class="services__description">
+                  Implemented multi-table joins, subqueries, and window functions to solve complex data reporting problems.
                </p>
             </article>
 
             <article class="services__card">
                <i class="ri-line-chart-line services__icon"></i>
-               <h3 class="services__title">Timeline Trends</h3>
+               <h3 class="services__title">Data Optimization</h3>
                <p class="services__description">
-                  Calculated monthly layoff totals and cumulative rolling totals over time using window functions to visualize trends.
-               </p>
-            </article>
-
-            <article class="services__card">
-               <i class="ri-trophy-line services__icon"></i>
-               <h3 class="services__title">Company Rankings</h3>
-               <p class="services__description">
-                  Used CTEs and `DENSE_RANK()` to rank top companies by total layoffs per year.
+                  Used indexes and views to enhance performance and streamline data analysis workflows.
                </p>
             </article>
          </div>
