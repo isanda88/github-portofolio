@@ -755,6 +755,12 @@ svg {
   }
   .home__blob {
     width: 550px;
+
+
+    .project__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
   }
   .home__content {
     row-gap: 4.5rem;
