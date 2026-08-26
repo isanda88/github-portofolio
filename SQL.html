@@ -13,7 +13,7 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>MySQL Project - Portfolio</title>
+   <title>MySQL Data Cleaning Project - Portfolio</title>
 </head>
 
 <body>
@@ -65,19 +65,18 @@
                </a>
 
                <h2 class="section__title" style="text-align: left;">
-                  MySQL Data Analysis Project
+                  World Layoffs - SQL Data Cleaning
                </h2>
 
                <p class="about__description">
-                  A relational database project focused on structuring data, writing complex SQL queries, views, and stored procedures to extract valuable business insights and optimize data retrieval.
+                  A data cleaning project in MySQL where I transformed raw global layoffs data into a structured, production-ready dataset using a 4-step workflow.
                </p>
 
                <div style="margin-top: 1.5rem;">
                   <h3 style="margin-bottom: 0.5rem; color: var(--title-color);">Technologies Used:</h3>
                   <p class="about__description">
-                     <strong>Database Management:</strong> MySQL<br>
-                     <strong>Query Language:</strong> SQL (DDL, DML, Joins, Aggregations, Subqueries)<br>
-                     <strong>Tools:</strong> MySQL Workbench / phpMyAdmin
+                     <strong>Database:</strong> MySQL Workbench<br>
+                     <strong>Key Techniques:</strong> CTEs, Window Functions (`ROW_NUMBER`), Self Joins, String & Date Functions (`TRIM`, `STR_TO_DATE`)
                   </p>
                </div>
 
@@ -89,7 +88,7 @@
             </div>
 
             <div class="home__image">
-               <img src="assets/img/MySQL.svg.webp" alt="MySQL Project Demo" class="home__profile-img" style="border-radius: 1rem; width: 100%;">
+               <img src="assets/img/MySQL.svg.webp" alt="MySQL Data Cleaning" class="home__profile-img" style="border-radius: 1rem; width: 100%;">
             </div>
          </div>
       </section>
@@ -97,31 +96,31 @@
       <!--==================== FEATURES SECTION ====================-->
       <section class="services section">
          <h2 class="section__title">
-            Key Features & Operations
+            Key Pipeline Steps
          </h2>
 
          <div class="services__container container grid">
             <article class="services__card">
-               <i class="ri-database-2-line services__icon"></i>
-               <h3 class="services__title">Database Design</h3>
+               <i class="ri-delete-bin-line services__icon"></i>
+               <h3 class="services__title">1. Deduplication</h3>
                <p class="services__description">
-                  Created normalized relational schemas, defined primary/foreign keys, and established table constraints.
+                  Identified and removed duplicate rows using `ROW_NUMBER()`, CTEs, and staging tables.
                </p>
             </article>
 
             <article class="services__card">
-               <i class="ri-code-s-slash-line services__icon"></i>
-               <h3 class="services__title">Advanced Queries</h3>
+               <i class="ri-list-check-2 services__icon"></i>
+               <h3 class="services__title">2. Standardization</h3>
                <p class="services__description">
-                  Implemented multi-table joins, subqueries, and window functions to solve complex data reporting problems.
+                  Trimmed extra whitespaces, unified industry labels, and parsed strings into proper `DATE` types.
                </p>
             </article>
 
             <article class="services__card">
-               <i class="ri-line-chart-line services__icon"></i>
-               <h3 class="services__title">Data Optimization</h3>
+               <i class="ri-filter-3-line services__icon"></i>
+               <h3 class="services__title">3. Missing Data</h3>
                <p class="services__description">
-                  Used indexes and views to enhance performance and streamline data analysis workflows.
+                  Populated blank industry fields via self-joins and removed uninformative null records.
                </p>
             </article>
          </div>
