@@ -24,9 +24,9 @@
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(231, 79%, 89%);
-  --body-color: hsl(230, 89%, 11%);     
+  --body-color: hsl(231, 70%, 7%);     
   
-  --container-color: hsla(231, 92%, 20%, 0.659);
+  --container-color: hsl(211, 100%, 7%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -763,7 +763,7 @@ svg {
   }
 
 .data-projects-title {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 55px;
 }
 
