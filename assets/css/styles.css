@@ -757,11 +757,18 @@ svg {
     width: 550px;
 
 
-    .project__title {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
+
+
+
   }
+
+.data-projects-title {
+    font-size: 22px;
+    margin-top: 55px;
+}
+
+
+
   .home__content {
     row-gap: 4.5rem;
   }
