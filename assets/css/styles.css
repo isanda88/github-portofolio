@@ -463,6 +463,8 @@ svg {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  width: 280px;
+  height: 180px;
 }
 
 .projects__img {
