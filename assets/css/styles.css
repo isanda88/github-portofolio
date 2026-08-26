@@ -64,6 +64,17 @@
   }
 }
 
+
+/* HOME SECTION */
+.home {
+   background-color: #000021;
+}
+
+/* PROJECTS SECTION */
+.projects {
+   background-color: #08051f;
+}
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
