@@ -1017,3 +1017,57 @@ svg {
 .contact__button:hover {
    transform: translateY(-2px);
 }
+
+/* ==================== CENTERING & LAYOUT IMPROVEMENTS ==================== */
+
+.home__content {
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home__social {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.projects__wrapper {
+  margin-bottom: 4rem;
+}
+
+.projects__header-group {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects__group-title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 0.25rem;
+}
+
+.projects__group-subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.projects__container {
+  justify-content: center;
+  justify-items: center;
+}
+
+.projects__card {
+  width: 100%;
+  max-width: 320px;
+}

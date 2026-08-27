@@ -14,7 +14,7 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>My Portfolio</title>
+   <title>Ioana Sandu | Portfolio</title>
 </head>
 
 <body>
@@ -22,13 +22,12 @@
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
+         <a href="#home" class="nav__logo">Ioana <span>Sandu</span></a>
+         
          <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                <li class="nav__item">
                   <a href="#home" class="nav__link active-link">Home</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#about" class="nav__link">About</a>
                </li>
                <li class="nav__item">
                   <a href="#projects" class="nav__link">Projects</a>
@@ -59,307 +58,274 @@
          <div class="home__container container grid">
             <div class="home__content">
                <div class="home__data">
-                  <h3 class="home__subtitle">
-                     Hello, <span>I’m Ioana.</span>
-                  </h3>
+                  <h1 class="home__title">
+                     Hello, <span>I’m Ioana</span>
+                  </h1>
+                  
                   <p class="home__description">
-                     Welcome to my portfolio!
-                     Here you'll find projects developed throughout my university studies and personal learning journey.
+                     Welcome to my portfolio! Here you'll find projects developed throughout my university studies, data analytics courses, and personal learning journey.
                   </p>
-               </div>
-</div>
-               <div class="home__social">
-                  <a href="https://github.com/isanda88" target="_blank" class="home__social-link">
-                     <i class="ri-github-fill"></i>
-                  </a>
+                  
+                  <div class="home__social">
+                     <a href="https://github.com/isanda88" target="_blank" class="home__social-link" aria-label="GitHub">
+                        <i class="ri-github-fill"></i>
+                     </a>
 
-                  <a href="https://www.linkedin.com/in/ioana-s-191797383/" target="_blank" class="home__social-link">
-                     <i class="ri-linkedin-box-line"></i>
-                  </a>
+                     <a href="https://www.linkedin.com/in/ioana-s-191797383/" target="_blank" class="home__social-link" aria-label="LinkedIn">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                  </div>
                </div>
             </div>
-         
+         </div>
       </section>
 
-      <!--==================== PROJECTS HEADER ====================-->
-      <!-- <section class="projects section" id="projects">
+      <!--==================== MAIN PROJECTS SECTION ====================-->
+      <section class="projects section" id="projects">
          <div class="section__header">
-            <h2 class="section__title">Personal Projects</h2>
-            <h3 class="section__subtitle">Hands-on projects developed through data analytics courses and independent learning</h3>
-            <p class="section__description">Data Analytics, Data Science, Machine Learning & AI Engineering</p>
-         </div>
-      </section> -->
-
-      <!--==================== DATA ANALYTICS PROJECTS ====================-->
-
-      <br><br>
-      
-      <br><br>
-      
-      <br><br>
-
-      <section class="section">
-         <h2 class="section__title project__title">Data Analytics Projects</h2>
-         <h3 class="section__subtitle">More projects coming soon as I finish, update, or push them to GitHub.</h3>
-         <h4 class="section__subsubtitle">I will work on more complex projects, such as those featured on (https://www.analystbuilder.com/projects).
-</h4>
-     
-       
-
-         <div class="projects__container container grid">
-            <!-- Project 1 -->
-            <article class="projects__card">
-               <img src="assets/img/MySQL.svg.webp" alt="Project 1" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">SQL</span>
-                  <h2 class="projects__title">MySQL</h2>
-                  <a href="SQL.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article class="projects__card">
-               <img src="assets/img/Microsoft_Office_Excel_(2025–present).svg" alt="Project 2" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Excel</span>
-                  <h2 class="projects__title">Excel Project</h2>
-                  <a href="Excel.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 3 -->
-            <article class="projects__card">
-               <img src="assets\img\1679145022415.jfif" alt="Project 3" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Tableau</span>
-                  <h2 class="projects__title">Tableau Project</h2>
-                  <a href="Tableau.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 4 -->
-            <article class="projects__card">
-               <img src="assets/img/Power-BI-logo.webp" alt="Project 4" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">PowerBI</span>
-                  <h2 class="projects__title">PowerBI Project</h2>
-                  <a href="PowerBI.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 5 -->
-            <article class="projects__card">
-               <img src="assets/img/Microsoft_Azure.svg.webp" alt="Project 5" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Azure</span>
-                  <h2 class="projects__title">Azure Introduction</h2>
-                  <a href="Azure.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 6 -->
-            <article class="projects__card">
-               <img src="assets/img/R_logo.svg" alt="Project 6" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">R</span>
-                  <h2 class="projects__title">R Project</h2>
-                  <a href="R.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-         </div>
-      </section>
-
-
-<!-- SOON -->
- <section class="section">
-         <h2 class="section__title project__title">Projects coming soon</h2>
-         <h3 class="section__subtitle">More projects coming soon as I finish, update, or push them to GitHub.</h3>
-        
-         
-
-
-         <div class="projects__container container grid">
-            <!-- Project 1 -->
-            <article class="projects__card">
-               <img src="assets/img/Python-logo.png" alt="Project 1" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Python & Pandas</span>
-                  <h2 class="projects__title">Project</h2>
-                  <a href="PythonPandas.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article class="projects__card">
-               <img src="assets/img/databricks.png" alt="Project 2" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Databricks</span>
-                  <h2 class="projects__title">Project</h2>
-                  <a href="Databricks.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <!-- Project 3 -->
-            <article class="projects__card">
-               <img src="assets\img\aws.png" alt="Project 3" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">AWS</span>
-                  <h2 class="projects__title"> Project</h2>
-                  <a href="AWS.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <article class="projects__card">
-               <img src="assets\img\agile.png" alt="Project 3" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Agile</span>
-                  <h2 class="projects__title"> Project</h2>
-                  <a href="Agile.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
             
+
+         <!-- DATA ANALYTICS PROJECTS -->
+         <div class="projects__wrapper">
+            <div class="projects__header-group">
+               <h3 class="projects__group-title">Data Analytics Projects</h3>
+               <p class="projects__group-subtitle">Core analytical workflows, dashboards, and database design</p>
+            </div>
+
+            <div class="projects__container container grid">
+               <!-- Project 1 -->
+               <article class="projects__card">
+                  <img src="assets/img/MySQL.svg.webp" alt="MySQL Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">SQL</span>
+                     <h3 class="projects__title">MySQL</h3>
+                     <a href="SQL.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 2 -->
+               <article class="projects__card">
+                  <img src="assets/img/Microsoft_Office_Excel_(2025–present).svg" alt="Excel Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Excel</span>
+                     <h3 class="projects__title">Excel Project</h3>
+                     <a href="Excel.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 3 -->
+               <article class="projects__card">
+                  <img src="assets/img/1679145022415.jfif" alt="Tableau Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Tableau</span>
+                     <h3 class="projects__title">Tableau Project</h3>
+                     <a href="Tableau.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 4 -->
+               <article class="projects__card">
+                  <img src="assets/img/Power-BI-logo.webp" alt="PowerBI Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">PowerBI</span>
+                     <h3 class="projects__title">PowerBI Project</h3>
+                     <a href="PowerBI.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 5 -->
+               <article class="projects__card">
+                  <img src="assets/img/Microsoft_Azure.svg.webp" alt="Azure Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Azure</span>
+                     <h3 class="projects__title">Azure Introduction</h3>
+                     <a href="Azure.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <!-- Project 6 -->
+               <article class="projects__card">
+                  <img src="assets/img/R_logo.svg" alt="R Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">R</span>
+                     <h3 class="projects__title">R Project</h3>
+                     <a href="R.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div>
          </div>
-      </section>
 
- <!--==================== AGENTIC ====================-->
-      <section class="projects section">
-         <div class="section__header">
-            <h2 class="section__title">Agentic AI Course</h2>
-       
+         <!-- UPCOMING PROJECTS -->
+         <div class="projects__wrapper">
+            <div class="projects__header-group">
+               <h3 class="projects__group-title">Projects Coming Soon</h3>
+               <p class="projects__group-subtitle">Currently building and updating new repositories</p>
+            </div>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/Python-logo.png" alt="Python Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Python & Pandas</span>
+                     <h3 class="projects__title">Data Analysis</h3>
+                     <a href="PythonPandas.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/databricks.png" alt="Databricks Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Databricks</span>
+                     <h3 class="projects__title">Big Data Pipeline</h3>
+                     <a href="Databricks.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/aws.png" alt="AWS Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">AWS</span>
+                     <h3 class="projects__title">Cloud Infrastructure</h3>
+                     <a href="AWS.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/agile.png" alt="Agile Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Agile</span>
+                     <h3 class="projects__title">Project Management</h3>
+                     <a href="Agile.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+<article class="projects__card">
+                  <img src="assets/img/medicaldbb.jpg" alt="Medical DB Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Full-Stack & AI</span>
+                     <h3 class="projects__title">Medical Data & AI System</h3>
+                     <a href="MedicalDbAi.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+
+
+
+
+
+
+
+            </div>
          </div>
 
-         <div class="projects__container container grid">
-            <!-- Project 1 -->
-            <article class="projects__card">
-               <img src="assets/img/agentic.jfif" alt="Project 1" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Medical Agent AI</span>
-                  <h2 class="projects__title">Modern website</h2>
-                  <a href="medagent.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
+         <!-- AGENTIC AI & MACHINE LEARNING -->
+         <div class="projects__wrapper">
+            <div class="projects__header-group">
+               <h3 class="projects__group-title">AI & Machine Learning</h3>
+               <p class="projects__group-subtitle">Applied intelligent systems and predictive modeling</p>
+            </div>
 
-                 
-               </div>
-            </article>
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/agentic.jfif" alt="Agentic AI Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Agentic AI</span>
+                     <h3 class="projects__title">Medical Agent AI</h3>
+                     <a href="medagent.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-         
+               <article class="projects__card">
+                  <img src="assets/img/classification.jfif" alt="ML Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Machine Learning</span>
+                     <h3 class="projects__title">Mammographic Classification</h3>
+                     <a href="MammographicMass.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-        
+               <article class="projects__card">
+                  <img src="assets/img/udemy.png" alt="Course Projects" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Coursework</span>
+                     <h3 class="projects__title">Specialized ML Labs</h3>
+                     <a href="ProjectsUdemy.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div>
          </div>
-      </section>
 
+         <!-- UNIVERSITY PROJECTS -->
+         <div class="projects__wrapper">
+            <div class="projects__header-group">
+               <h3 class="projects__group-title">Relevant University Projects</h3>
+               <p class="projects__group-subtitle">Academic software development and system architecture</p>
+            </div>
 
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/library.jpg" alt="Library Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+                     <h3 class="projects__title">Library System</h3>
+                     <a href="LibraryProject.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-      <!--==================== DS & MACHINE LEARNING PROJECTS ====================-->
-      <section class="projects section">
-         <div class="section__header">
-            <h2 class="section__title">DS & Machine Learning Projects</h2>
-       
-         </div>
+               <article class="projects__card">
+                  <img src="assets/img/bcjpg.jpg" alt="Geometry Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Java</span>
+                     <h3 class="projects__title">Geometry Engine</h3>
+                     <a href="BezierCurve.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-         <div class="projects__container container grid">
-            <!-- Project 1 -->
-            <article class="projects__card">
-               <img src="assets/img/classification.jfif" alt="Project 1" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Mammographic Mass Classification</span>
-                  <h2 class="projects__title">Modern website</h2>
-                  <a href="MammographicMass.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
+               <article class="projects__card">
+                  <img src="assets/img/shop.jpg" alt="Shop Project" class="projects__img">
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">C#</span>
+                     <h3 class="projects__title">Online Store Platform</h3>
+                     <a href="OnlineShop.html" class="projects__button">
+                        View demo <i class="ri-arrow-right-line"></i>
+                     </a>
+                  </div>
+               </article>
 
-                 
-               </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article class="projects__card">
-               <img src="assets/img/udemy.png" alt="Project 2" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Other Projects From Course</span>
-   
-                  <a href="ProjectsUdemy.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-        
-         </div>
-      </section>
-
-      <!--==================== UNIVERSITY PROJECTS ====================-->
-      <section class="projects section">
-         <h2 class="section__title">
-            Relevant University Projects
-         </h2>
-
-         <div class="projects__container container grid">
-            <article class="projects__card">
-               <img src="assets/img/library.jpg" alt="Library Project" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Web</span>
-                  <h2 class="projects__title">Library</h2>
-                  <a href="LibraryProject.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <article class="projects__card">
-               <img src="assets/img/bcjpg.jpg" alt="projects image" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Web</span>
-                  <h2 class="projects__title">Geometry in Java</h2>
-                  <a href="BezierCurve.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <article class="projects__card">
-               <img src="assets/img/shop.jpg" alt="projects image" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Web</span>
-                  <h2 class="projects__title">Online Shop in C#</h2>
-                  <a href="OnlineShop.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
-
-            <article class="projects__card">
-               <img src="assets/img/medicaldbb.jpg" alt="projects image" class="projects__img">
-               <div class="projects__modal">
-                  <span class="projects__subtitle">Web</span>
-                  <h1 class="projects__title">Medical Data Management & AI Diagnostics System</h1>
-                  <a href="MedicalDbAi.html" class="projects__button">
-                     View demo <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-            </article>
+               
+            </div>
          </div>
       </section>
 
@@ -375,21 +341,16 @@
          </div>
 
          <div class="footer__social">
-            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-               <i class="ri-facebook-circle-line"></i>
+            <a href="https://github.com/isanda88" target="_blank" class="footer__social-link" aria-label="GitHub">
+               <i class="ri-github-fill"></i>
             </a>
-
-            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-               <i class="ri-instagram-line"></i>
-            </a>
-
-            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-               <i class="ri-twitter-line"></i>
+            <a href="https://www.linkedin.com/in/ioana-s-191797383/" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+               <i class="ri-linkedin-box-line"></i>
             </a>
          </div>
 
          <span class="footer__copy">
-            &#169; Copyright Bedimcode. All rights reserved
+            &#169; Ioana Sandu. All rights reserved.
          </span>
       </div>
    </footer>
@@ -399,13 +360,9 @@
       <i class="ri-arrow-up-line"></i>
    </a>
 
-   <!--=============== SCROLLREVEAL ===============-->
+   <!--=============== SCRIPTS ===============-->
    <script src="assets/js/scrollreveal.min.js"></script>
-
-   <!--=============== EMAIL JS ===============-->
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-   <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
    <script src="assets/js/contact.js"></script>
 </body>
