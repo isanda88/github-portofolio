@@ -24,9 +24,9 @@
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(231, 79%, 89%);
-  --body-color: hsl(241, 70%, 7%);     
+  --body-color: hsl(353, 89%, 86%);     
   
-  --container-color: hsl(235, 100%, 7%);
+  --container-color: hsl(306, 43%, 60%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
