@@ -1,32 +1,32 @@
-// const contactForm = document.getElementById("contact-form");
-// const contactMessage = document.getElementById("contact-message");
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message');
 
-// emailjs.init({
-//     publicKey: "kVek1Xe6s7uQlLIJs",
-// });
+const sendEmail = (e) => {
+   e.preventDefault();
 
-// contactForm.addEventListener("submit", function (e) {
-//     e.preventDefault();
+ 
+   emailjs.sendForm('service_k0po1wa', 'template_fwrppiu', '#contact-form', '0AMUeqCj8foXDrhDE')
+      .then(() => {
+        
+         contactMessage.textContent = 'Message sent successfully ✅';
+         contactMessage.style.color = 'hsl(140, 70%, 60%)';
 
-//     emailjs
-//         .sendForm(
-//             "service_chxvu88",
-//             "template_y3aa7aw",
-//             "#contact-form"
-//         )
-//         .then(() => {
-//             contactMessage.textContent = "Message sent successfully!";
-//             contactMessage.style.color = "green";
-//             contactForm.reset();
+        
+         setTimeout(() => {
+            contactMessage.textContent = '';
+         }, 5000);
 
-//             setTimeout(() => {
-//                 contactMessage.textContent = "";
-//             }, 5000);
-//         })
-//         .catch((error) => {
-//     console.error("EmailJS Error:", error.text || error);
+       
+         contactForm.reset();
+      }, (error) => {
+        
+         contactMessage.textContent = 'Message failed to send (service error) ❌';
+         contactMessage.style.color = 'hsl(0, 70%, 60%)';
+         console.error('EmailJS Error:', error);
+      });
+};
 
-//     contactMessage.textContent = "Error: " + (error.text || "Unknown error");
-//     contactMessage.style.color = "red";
-// });
-// });
+if (contactForm) {
+   contactForm.addEventListener('submit', sendEmail);
+}
