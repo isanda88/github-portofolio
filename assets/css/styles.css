@@ -63,6 +63,16 @@
     --smaller-font-size: .813rem;
   }
 }
+#project-details .about__container {
+   max-width: 900px;
+   margin-inline: auto;
+}
+
+#project-details .about__data {
+   width: 100%;
+   max-width: 850px;
+   margin-inline: auto;
+}
 
 
 /* HOME SECTION */
